@@ -1,0 +1,21 @@
+{
+  "id": "opr-landing-imagelist",
+  "name": "Landing: List Images",
+  "srcdoc":"./build/index.html",
+  "sidebar":false,
+  "fieldTypes": [
+    "Object"
+  ],
+   "parameters": {
+	  "instance":[
+		  {
+			  "id":"maxIcons",
+			  "name":"Maximum Number of Icons",
+			  "type":"Number",
+			  "default":4
+			  
+		  }
+	  ],
+	  "installation":[]
+  }
+}

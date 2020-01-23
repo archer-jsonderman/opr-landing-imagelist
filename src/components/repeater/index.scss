@@ -1,0 +1,158 @@
+html,
+body,
+div {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+}
+.overview{
+	border-bottom:1px solid #ccc;
+	padding-bottom:2rem;
+	margin-bottom: 2rem;
+	label{
+		margin-top:1rem;
+	}
+	h3{
+		margin-bottom:0;
+	}
+}
+.sortableList{
+	display:grid;
+	grid-template:auto/repeat(3,1fr);
+	grid-auto-flow:row;
+	grid-auto-rows:1fr;
+	grid-gap:1rem;
+	.Item{
+		min-height:70px;
+	    background: white;
+	    position: relative;
+	    padding: 10px 10px 10px 20px;
+	    border:solid 1px #d3dce0;
+	    color:#536171;
+	    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+		.quill{
+			border:solid 1px #ccc;
+			p{
+		    	font-size:.875rem;
+		    }
+		}
+	}
+}
+.CardDragHandle__CardDragHandle___2rqnO{
+	position: absolute;
+    left: 0;
+    top	:0;
+    bottom:0;
+    display: grid;
+    align-content:center;
+}
+.buttonArea {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 10px; 
+    button{
+		margin:0 0 10px;
+		width: 30px;
+		height: 30px;
+		border-radius: 3px;
+	    padding: 3px 0 0;
+	    &> * {
+		  pointer-events: none;
+		}
+		&.removeButton{
+			background-color:#d9453f;
+			border-color:#cd3f39;
+			svg{
+				fill:white;
+			}
+		}
+	}
+}
+.sortableList{
+	margin-bottom:1rem;
+}
+.Button__Button--full-width___3Fmpo{
+	margin-bottom:3rem;
+}
+/***FontIconPicker Customizations***/
+.rfip{
+	width: 100%;
+	margin: 0;
+	vertical-align: bottom;
+	.rfipbtn--default{
+	
+	&.rfipbtn{
+		min-height:4rem;
+	}
+	.rfipbtn__button{
+		width:2rem;
+		
+	}
+	.rfipbtn__current{
+		flex:0 0 80%;
+		padding:.25rem .4rem;
+	}
+	.rfipbtn__icon{
+	 	border:none;
+	 	width:100%;
+	 	justify-content:start;
+	 	margin:0;
+	 	height: 25px;
+	}
+	 .rfipbtn__elm{
+		 	width: 100%;
+		 	justify-content:start;
+		 	svg{
+			 	height: auto;
+			    width:4rem;
+		 	}
+	 	}
+ 	.rfipbtn__del{
+	 	display:none;
+ 	}
+ 	
+ 	
+ }
+}
+ .rfipdropdown--default {
+	 .rfipicons__pager{
+	 	display:none;
+ 	}
+	 .rfipicons__icon{
+		width: 64px;
+	    height: 64px;
+	    padding: 0px;
+	    margin:.2rem;
+	 	.rfipicons__ibox{
+		 	border:none;
+		 	&:hover>*{
+			 	transform:scale(1.3);
+		 	}
+		 	 &>p{
+		 	 	display:none;
+	 		}
+	 		svg{
+			 	 max-height:3.5rem;
+			 	 width:auto;
+		 	 }
+	 		
+	 	}
+ }
+ 	.rfipicons__icon--selected{
+	 	 .rfipicons__ibox{
+		 	 background-color:lightblue;
+	 	 }
+	 	}
+
+	&.rfipdropdown {
+	    width: 438px;
+	    .rfipdropdown__selector{
+		    padding:.4rem;
+	    }
+	  }  
+ }
