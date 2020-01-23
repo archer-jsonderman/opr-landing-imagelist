@@ -26,7 +26,7 @@ export default class Uploader extends React.Component {
   }
 
   componentDidMount() {
-	console.log(this.props)
+	//console.log(this.props)
 	const {image} = this.props.items[this.props.childIndex].content;
 	//console.log(this.props.items[this.props.childIndex].content,'uploading')  
     if (image.sys) {
