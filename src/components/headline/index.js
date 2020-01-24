@@ -1,10 +1,16 @@
 import React from "react";
 import { init } from "contentful-ui-extensions-sdk";
-import ReactQuill from 'react-quill';
+import ReactQuill,{Quill} from 'react-quill';
 import 'react-quill/dist/quill.bubble.css';
 import {FormLabel} from '@contentful/forma-36-react-components';
 import '@contentful/forma-36-react-components/dist/styles.css';
 import './index.scss'; 
+
+let Block = Quill.import('blots/block');
+class BaseBlot extends Block{ }
+BaseBlot.blotName = 'block';
+BaseBlot.tagName = 'f';
+Quill.register('blots/block', BaseBlot);
 
 export default class Headline extends React.Component{
 	constructor(props){
